@@ -1,0 +1,48 @@
+Data Explanation:
+
+Home Team:
+Offence side:
+HAG: Home team average goals in the past three Home-host games
+HAS: Home team average shoots in the past three Home-host games
+HAST: Home team average shoots on target in the past three Home-host games
+HAC: Home team average corners in the past three Home-host games
+
+Defense side:
+HAOG: Home team average goals by opponent in the past three Home-host games
+HAOS: Home team average shoots taken by opponents in the past three Home-host games
+HAOST: Home team average shoots on target taken by opponent in the past three Home-host games
+HAOC: Home team average corners taken by opponents in the past three Home-host games
+
+Fouls:
+HAF: Home team average fouls in the past three Home-host games
+HAOF: Home team average fouls taken by opponents in the past three Home-host games
+HAY: Home team average yellow card in the past three Home-host games
+HAOY: Home team average yellow card taken by opponents in the past three Home-host games
+HSR: Home team summation of red cards in the past three Home-host games
+HSOR: Home team summation of red cards taken by opponents in the past three Home-host games
+
+Match Record:
+g1h
+g2h
+g3h
+
+Away Team:
+Offence side:
+AAG: Away team average goals in the past three Away games
+AAS: Away team average shoots in the past three Away games
+AAST: Away team average shoots on target in the past three Away games
+AAC: Away team average corners in the past three Away games
+
+Defense side:
+AAOG: Away team average goals by opponent in the past three Away games
+AAOS: Away team average shoots taken by opponents in the past three Away games
+AAOST: Away team average shoots on target taken by opponent in the past three Away games
+AAOC: Away team average corners taken by opponents in the past three Away games
+
+Fouls:
+AAF: Away team average fouls in the past three Away games
+AAOF: Away team average fouls taken by opponents in the past three Away games
+AAY: Away team average yellow card in the past three Away games
+AAOY: Away team average yellow card taken by opponents in the past three Away games
+ASR: Away team summation of red cards in the past three Away games
+ASOR: Away team summation of red cards taken by opponents in the past three Away games
