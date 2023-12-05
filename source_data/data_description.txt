@@ -22,9 +22,11 @@ HSR: Home team summation of red cards in the past three Home-host games
 HSOR: Home team summation of red cards taken by opponents in the past three Home-host games
 
 Match Record:
-g1h
-g2h
-g3h
+g1h: the result of the last home game for home team
+g2h: the result of the second last home game for home team
+g3h: the result of the third last home game for home team
+
+HAGD: Home team average goal difference in the past three home-host games
 
 Away Team:
 Offence side:
@@ -46,3 +48,10 @@ AAY: Away team average yellow card in the past three Away games
 AAOY: Away team average yellow card taken by opponents in the past three Away games
 ASR: Away team summation of red cards in the past three Away games
 ASOR: Away team summation of red cards taken by opponents in the past three Away games
+
+AAGD: Away team average goal difference in the past three away games
+
+Match Record:
+g1a: the result of the last away game for away team
+g2a: the result of the second last away game for away team
+g3a: the result of the third last away game for away team
