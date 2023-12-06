@@ -6,7 +6,7 @@ library(zoo)
 setwd("~/project_611")
 ### read in data
 start_year <- 2009
-end_year <- 2020
+end_year <- 2019
 file_names <- sapply(start_year:end_year, function(y) {
   paste0(y, "-", substring(y+1, 3, 4), ".csv")
 })
@@ -144,6 +144,7 @@ data_cleaning <- function(data1_frame) {
   new_names <- sub("\\.x$", "", columns_to_rename)
   names(new_data_test)[names(new_data_test) %in% columns_to_rename] <- new_names
   
+  new_data_test <- new_data_test[, !names(new_data_test) %in% c("HGD", "AGD")]
   # return data frame
   return(new_data_test)
 }
