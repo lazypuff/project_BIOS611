@@ -4,11 +4,6 @@ library(ggplot2)
 library(patchwork)
 library(RColorBrewer)
 
-args <- commandArgs(trailingOnly = TRUE)
-if(length(args) > 0) {
-  setwd(args[1])
-}
-
 train_cleaned_df <- read.csv("source_data/train_data.csv")
 train_cleaned_df <- train_cleaned_df[,-1]
 test_cleaned_df <- read.csv("source_data/test_data.csv")
@@ -91,7 +86,7 @@ avg_points_long <- avg_points_long %>% filter(Points != 0)
 heatmap <- ggplot(avg_points_long, aes(x = Team, y = Opponent, fill = Points)) +
   geom_tile() +
   scale_fill_gradient(low = "blue", high = "red") + # Adjust colors as needed
-  labs(title = "Average Points Taken from Opponent Heatmap", 
+  labs(title = "Average Points Take from Opponent Heatmap", 
        x = "Team", y = "Opponent", fill = "Avg Points") +
   theme_minimal()
 

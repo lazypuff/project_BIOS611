@@ -4,11 +4,6 @@ library(ggplot2)
 library(patchwork)
 library(RColorBrewer)
 
-args <- commandArgs(trailingOnly = TRUE)
-if(length(args) > 0) {
-  setwd(args[1])
-}
-
 train_cleaned_df <- read.csv("source_data/train_data.csv")
 train_cleaned_df <- train_cleaned_df[,-1]
 test_cleaned_df <- read.csv("source_data/test_data.csv")
@@ -76,8 +71,4 @@ p2 <- ggplot(Hometeam_data, aes(x = reorder(HomeTeam, avg_FTAG), y = avg_FTAG, f
 
 p_combined <- p1 / p2
 
-p_combined
-
 ggsave("HomeTeam_performance.png", plot = p_combined, width = 10, height = 6, units = "in")
-
-

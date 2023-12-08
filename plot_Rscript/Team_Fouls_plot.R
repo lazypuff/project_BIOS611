@@ -3,8 +3,8 @@ library(dplyr)
 library(ggplot2)
 library(patchwork)
 library(RColorBrewer)
-
-setwd("~/Desktop/BIOS_course/BIOS611/project_611")
+library(lubridate)
+library(zoo)
 
 data_cleaning <- function(data1_frame) {
   selected_columns <- c("Div","Date","HomeTeam","AwayTeam","FTHG","FTAG","FTR","HTHG",
@@ -129,4 +129,3 @@ p3 <- ggplot(average_fouls, aes(x = reorder(HomeTeam, AverageRedCard),
 p_combined = p1 / p2 / p3
 
 ggsave("Team_Fouls.png", plot = p_combined, width = 10, height = 10, units = "in")
-average_fouls

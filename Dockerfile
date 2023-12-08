@@ -1,12 +1,14 @@
-FROM r-base
+FROM rocker/verse
 
-# Set the working directory in the Docker container
-WORKDIR /meisheng/app
+# Install additional R packages
+RUN R -e "install.packages(c('ggplot2', 'dplyr', 'patchwork', 'RColorBrewer', 'data.table', 'nnet', 'lubridate', 'zoo'), dependencies=TRUE)"
 
-# Install R packages
-RUN R -e "install.packages('data.table', dependencies = TRUE)"
-RUN R -e "install.packages('nnet', dependencies = TRUE)"
+# Set working directory
+WORKDIR /workdir
 
-# stats is likely included in the base R installation
+# Copy project files to the container
+COPY multinom.R /workdir/
+COPY source_data /workdir/
+COPY plot_Rscript /workdir/
+COPY Makefile /workdir/
 
-COPY multinom.R /meisheng/app/
