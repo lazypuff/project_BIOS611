@@ -8,7 +8,7 @@ The original data contain 20 years of EPL(English Premier League) data. I take d
 
 In this repository, four final polished graphs are 'BetRatio.png', 'HomeTeam_performance.png', 'avg_points_heatmap_big6.png' and 'Team_Fouls.png'. The final report is named as 'report.pdf'.
 
-You can also get these graphs, report and analysis results inside reports by following the steps below.
+You can also get these graphs, report and analysis results inside the report by following the steps below.
 
 # Clone this repository from GitHub.
 Method 1:
