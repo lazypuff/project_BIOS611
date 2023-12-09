@@ -23,6 +23,8 @@ Download this whole repository via Github website or app.
 "cd /path/to/your/directory/project_BIOS611"
 
 # Dockerfile:
+ATTENTION!!!! This Dockerfile is based on a M1 chip Mac, it may not be applied to other system.
+
 Before we are using docker, we need to download docker if we don't have it.
 
 Steps that using docker:
