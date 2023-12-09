@@ -1,10 +1,14 @@
 Hi, this is my 611 Data Science Project. More to come.
 
-This project was planned to develop a gambling model on the English Premier Leauge soccer games. Due to time limit,now it reduces to a multinomial logsitic regression model that predicts the results of 
+This project was planned to develop a gambling model on the English Premier Leauge soccer games. Due to time limit,now it reduces to a multinomial logsitic regression model that predicts the results of EPL soccer games and some interesting visulization on EPL teams.
 
 Dataset:
 Original dataset is downloaded from https://www.kaggle.com/datasets/saife245/english-premier-league.
 The original data contain 20 years of EPL(English Premier League) data. I take data started from 09-10 season as they started to have a bet ratio from gambling company. After some data cleaning(Code please see the data_cleaning.R inside the source_data folder), I create a more compact dataset which includes many variables I think is relevant with the result of a game (detailed description is in the folder of source_data, called data_description.txt).
+
+In this repository, four final polished graphs are 'BetRatio.png', 'HomeTeam_performance.png', 'avg_points_heatmap_big6.png' and 'Team_Fouls.png'. The final report is named as 'report.pdf'.
+
+You can also get these graphs, report and analysis results inside reports by following the steps below.
 
 # Clone this repository from GitHub.
 Method 1:
