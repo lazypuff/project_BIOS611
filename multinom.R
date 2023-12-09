@@ -2,7 +2,6 @@ library(data.table)
 library(stats)
 library(nnet)
 
-setwd("~/Desktop/BIOS_course/BIOS611/project_611")
 
 train_data <- fread("source_data/train_data.csv", drop = 1)
 test_data <- fread("source_data/test_data.csv", drop = 1)
@@ -32,6 +31,6 @@ predicted_probs <- predict(model, test_data_cleaned, type = "probs")
 
 accuracy <- mean(test_data_cleaned$FTR == predicted_values)
 
-cat(paste("The accuracy of predicting the result of a game is", format(accuracy, nsmall = 2), 
+cat(paste("The accuracy from a multinomial logistic regression of predicting the result of a game is", format(accuracy, nsmall = 2), 
           "\n", "the accuracy for random guess for win/loss/draw is", format(1/3, nsmall = 2)))
 
